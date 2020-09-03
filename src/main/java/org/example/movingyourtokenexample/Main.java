@@ -8,7 +8,7 @@ public class Main {
 
         gameService.startGame(1);
         while (true) {
-            gameService.moveToken("Player1", diceService.rollDices());
+            gameService.moveToken("Player1", diceService.rollDice());
             if (gameService.checkIfPlayerWon("Player1") || gameService.checkIfPlayerNotWon("Player1")) {
                 break;
             }

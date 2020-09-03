@@ -11,7 +11,7 @@ public class MovesAreDeterminedByDiceRollsTest {
     private static final GameService gameService = new GameService();
     @Test
     public void whenThePlayerRollsADice_ThenTheResultShouldBe1to6Inclusive() {
-        int result = diceService.rollDices();
+        int result = diceService.rollDice();
         assertTrue(1 <= result && result <= 6);
     }
 
